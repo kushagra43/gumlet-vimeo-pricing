@@ -3,7 +3,7 @@ import videocms from "../../assets/videocms.svg";
 import videocms2 from "../../assets/videocms2.svg";
 import player from "../../assets/player.svg";
 import player2 from "../../assets/player2.svg";
-import Cinematic from "../../assets/Cinematic.svg";
+import cinematic from "../../assets/cinematic.svg";
 import cinematic2 from "../../assets/cinematic2.svg";
 import videoprotection from "../../assets/videoprotection.svg";
 import videoprotection2 from "../../assets/videoprotection2.svg";
@@ -266,7 +266,7 @@ const Section5 = () => {
           onClick={() => handleTabClick("cinematic")}
         >
           <img
-            src={activeTab === "cinematic" ? cinematic2 : Cinematic}
+            src={activeTab === "cinematic" ? cinematic2 : cinematic}
             alt=""
           />
           <span>Cinematic video</span>
