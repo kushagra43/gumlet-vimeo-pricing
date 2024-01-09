@@ -12,7 +12,7 @@ const Footer = () => {
         <h1 className="font-bold text-5xl">
           Transform Your <br /> Viewers’ Video <br /> Experiencein Minutes.
         </h1>
-        <button className="text-[#5046E6] flex justify-center items-center gap-2 font-semibold bg-white p-2 px-6 rounded-full">
+        <button className="text-[#5046E6] flex justify-center items-center gap-2 font-bold bg-white p-4 px-8 rounded-full">
           Try for Free <FaArrowRight />{" "}
         </button>{" "}
       </div>

@@ -3,7 +3,7 @@ import { FaArrowRight } from "react-icons/fa6";
 
 const Section3 = () => {
   return (
-    <div>
+    <div className="mb-20">
       <div className="flex flex-col justify-center items-center text-4xl font-semibold">
         <p>Reliable Video Hosting and Buffer-</p>
         <p>Free Streaming with Gumlet</p>
@@ -39,7 +39,7 @@ const Section3 = () => {
         </div>
       </div>
       <div className="flex justify-center items-center mt-12 mb-12">
-        <button className="text-white flex justify-center items-center gap-2 font-semibold bg-[#5046E6] p-2 px-6 rounded-full hover:scale-110 duration-200 transform">
+        <button className="text-white flex justify-center items-center gap-2 font-semibold bg-[#5046E6] p-4 px-8 rounded-full hover:scale-110 duration-200 transform">
           Try for Free <FaArrowRight />{" "}
         </button>
       </div>

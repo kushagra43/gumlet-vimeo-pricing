@@ -42,8 +42,8 @@ const Section4 = () => {
 
             <tr className="rounded-2xl border-t-2">
               <td className="p-4 px-10 border-r-2">Instant video start time</td>
-              <td className="p-4 px-10">
-                <img src={tick} alt="" className="shadow-inner" />
+              <td className="p-4 px-10 ">
+                <img src={tick} alt="" className=" backdrop-blur-sm" />
               </td>
               <td className="p-4 px-10">
                 <img src={cross} alt="" />

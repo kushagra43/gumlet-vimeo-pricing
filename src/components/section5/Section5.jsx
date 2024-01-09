@@ -294,7 +294,7 @@ const Section5 = () => {
       {renderTabContent()}
 
       <div>
-        <button className="text-[#5046E6] flex justify-center items-center gap-2 font-semibold bg-white p-2 px-6 rounded-full hover:scale-110 duration-200 transform">
+        <button className="text-[#5046E6] flex justify-center items-center gap-2 font-bold bg-white  px-8 p-4 rounded-full hover:scale-110 duration-200 transform">
           Try for Free <FaArrowRight />{" "}
         </button>
       </div>

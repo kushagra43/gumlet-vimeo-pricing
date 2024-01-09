@@ -5,7 +5,7 @@ import right from "../../assets/right.svg";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import star from "../../assets/star.svg"
+import star from "../../assets/star.svg";
 
 const Section7 = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -44,20 +44,18 @@ const Section7 = () => {
 
   const CustomPrevArrow = (props) => (
     <button {...props} className="slick-prev">
-      {/* Your custom prev arrow content, e.g., an SVG or an image */}
       <img src={left} alt="Previous" />
     </button>
   );
 
   const CustomNextArrow = (props) => (
     <button {...props} className="slick-next">
-      {/* Your custom next arrow content, e.g., an SVG or an image */}
       <img src={right} alt="Next" />
     </button>
   );
 
-
   var settings = {
+    // dots:true,
     infinite: true,
     speed: 500,
     slidesToShow: 3,
@@ -76,14 +74,19 @@ const Section7 = () => {
         <div className="mt-20">
           <Slider {...settings}>
             {slides.map((d, index) => (
-              <div key={index} className=" text-black bg-white rounded-xl mx-4 ">
-                <div className="mx-4 ">
-                  <div className="flex  justify-center rounded-lg text-white  items-center p-6 bg-gradient-to-r from-[#291FB1]  to-[#5046E6] ...">
+              <div
+                key={index}
+                className=" text-black bg-white rounded-xl mx-4 "
+              >
+                <div className="mx-4">
+                  <div className="flex flex-wrap  justify-center rounded-lg text-white  items-center p-6 py-16 px-8 bg-gradient-to-r from-[#291FB1]  to-[#5046E6] ...">
                     <span>{d.description}</span>
                   </div>
                   <div className="flex flex-col items-center justify-center gap-1 p-4">
-                    <span className="text-xl font-semibold">{d.name}</span>
-                    <span className="text-center">{d.designation}</span>
+                    <span className="text-2xl font-semibold">{d.name}</span>
+                    <span className="text-center text-sm text-zinc-400 font-medium">
+                      {d.designation}
+                    </span>
                     <span className="flex">
                       <img src={star} alt="" />
                       <img src={star} alt="" />
