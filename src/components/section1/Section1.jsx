@@ -4,9 +4,9 @@ import gumletDashboard from "../../assets/gumlet-dashboard.svg";
 
 const Section1 = () => {
   return (
-    <div className="bg-gradient-to-r from-[#291FB1]  to-[rgb(80,70,230)] h-1/2  ...">
+    <div className="bg-gradient-to-r from-[#291FB1]  to-[rgb(80,70,230)] h-1/2  ... rounded-b-[30%]">
       <div className="px-48 flex flex-col justify-center gap-8 p-6">
-        <h1 className="px-12 text-5xl font-semibold text-white">
+        <h1 className="px-12 text-5xl font-semibold text-white mt-20">
           Best Vimeo Alternative <br /> For Video Hosting
         </h1>
         <div className="flex items-center gap-20 justify-between px-12">
@@ -26,7 +26,14 @@ const Section1 = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-center items-center mt-3 ">
+      <div
+        className="flex justify-center items-center mt-3 "
+        // style={{
+        //   backgroundImage:
+        //     "linear-gradient(to bottom, transparent 50%, white 50%)",
+        //   pointerEvents: "none",
+        // }}
+      >
         <img src={gumletDashboard} alt="" />
       </div>
     </div>
