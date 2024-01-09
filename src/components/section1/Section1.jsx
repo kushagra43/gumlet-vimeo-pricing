@@ -4,7 +4,7 @@ import gumletDashboard from "../../assets/gumlet-dashboard.svg";
 
 const Section1 = () => {
   return (
-    <div className="bg-gradient-to-r from-[#291FB1]  to-[rgb(80,70,230)] h-1/2  ... rounded-b-[30%]">
+    <div className="bg-gradient-to-r from-[#291FB1]  to-[rgb(80,70,230)]  ... rounded-b-[90%]">
       <div className="px-48 flex flex-col justify-center gap-8 p-6">
         <h1 className="px-12 text-5xl font-semibold text-white mt-20">
           Best Vimeo Alternative <br />  For Video Hosting
