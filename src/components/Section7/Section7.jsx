@@ -63,8 +63,9 @@ const Section7 = () => {
     prevArrow: <CustomPrevArrow />,
     nextArrow: <CustomNextArrow />,
     slidesToShow:
-    windowWidth <= 768 ? 1 : // 1 slide for phone
-    windowWidth <= 1024 ? 2 : 3, // 2 slides for tablet  };
+    windowWidth <= 768 ? 1 : 
+    windowWidth <= 1024 ? 2 : 3,
+    autoplay:true
   }
   useEffect(() => {
     // Update windowWidth when window is resized

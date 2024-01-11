@@ -26,7 +26,9 @@ const Section5 = () => {
         return (
           <div className="flex flex-col md:flex-row gap-20 md:p-12 p-6 justify-center items-center text-white">
             <div className="flex flex-col gap-4 flex-1">
-              <h1 className="text-4xl font-semibold">Simplified video CMS</h1>
+              <h1 className="text-4xl text-balance font-semibold">
+                Simplified video CMS
+              </h1>
               <span className=" text-zinc-300">
                 Securely store and manage your video assets. Control every
                 aspect of your videos.
@@ -74,7 +76,7 @@ const Section5 = () => {
         return (
           <div className="flex flex-col md:flex-row gap-20 p-12 justify-center items-center text-white">
             <div className="flex flex-col gap-4 flex-1">
-              <h1 className="text-4xl font-semibold">
+              <h1 className="text-4xl text-balance font-semibold">
                 Your branding on your videos
               </h1>
               <span className=" text-zinc-300">
@@ -124,7 +126,7 @@ const Section5 = () => {
         return (
           <div className="flex flex-col md:flex-row gap-20 p-12 justify-center items-center text-white">
             <div className="flex flex-col gap-4 flex-1">
-              <h1 className="text-4xl font-semibold">
+              <h1 className="text-4xl text-balance font-semibold">
                 Cinematic video experience
               </h1>
               <span className=" text-zinc-300">
@@ -178,7 +180,9 @@ const Section5 = () => {
         return (
           <div className="flex flex-col md:flex-row gap-20 p-12 justify-center items-center text-white">
             <div className="flex flex-col gap-4 flex-1">
-              <h1 className="text-4xl font-semibold">Protect your videos</h1>
+              <h1 className="text-4xl text-balance font-semibold">
+                Protect your videos
+              </h1>
               <span className=" text-zinc-300">
                 Netflix-grade video security to maximize ROI and minimize piracy
                 and theft.{" "}
@@ -221,8 +225,8 @@ const Section5 = () => {
   };
   const renderTabContentPhone = () => {
     return (
-      <>
-        <div className="flex flex-col md:flex-row gap-20 md:p-12 p-6 justify-center items-center text-white">
+      <div className="flex flex-col">
+       <div className="flex flex-col md:flex-row gap-10 p-12 justify-center items-center text-white">
           <div className="flex flex-col gap-4 flex-1">
             <h1 className="text-4xl font-semibold">Simplified video CMS</h1>
             <span className=" text-zinc-300">
@@ -263,11 +267,11 @@ const Section5 = () => {
               </span>
             </div>
           </div>
-          <div className="flex-1">
-            <img src={dashboard2} alt="" />
+          <div className="flex-1 flex justify-center  ">
+            <img src={dashboard2} alt="" className="" />
           </div>
         </div>
-        <div className="flex flex-col md:flex-row gap-20 p-12 justify-center items-center text-white">
+        <div className="flex flex-col md:flex-row gap-10 p-12 justify-center items-center text-white">
           <div className="flex flex-col gap-4 flex-1">
             <h1 className="text-4xl font-semibold">
               Your branding on your videos
@@ -310,11 +314,11 @@ const Section5 = () => {
               </span>
             </div>
           </div>
-          <div className="flex-1">
+          <div className="flex-1  flex justify-center">
             <img src={dashboard3} alt="" />
           </div>
         </div>
-        <div className="flex flex-col md:flex-row gap-20 p-12 justify-center items-center text-white">
+        <div className="flex flex-col md:flex-row gap-10 p-12 justify-center items-center text-white">
           <div className="flex flex-col gap-4 flex-1">
             <h1 className="text-4xl font-semibold">
               Cinematic video experience
@@ -361,11 +365,11 @@ const Section5 = () => {
               </span>
             </div>
           </div>
-          <div className="flex-1">
+          <div className="flex-1  flex justify-center">
             <img src={dashboard4} alt="" />
           </div>
         </div>
-        <div className="flex flex-col md:flex-row gap-20 p-12 justify-center items-center text-white">
+        <div className="flex flex-col md:flex-row gap-10 p-12 justify-center items-center text-white">
           <div className="flex flex-col gap-4 flex-1">
             <h1 className="text-4xl font-semibold">Protect your videos</h1>
             <span className=" text-zinc-300">
@@ -401,15 +405,15 @@ const Section5 = () => {
             <img src={dashboard4} alt="" />
           </div>
         </div>
-      </>
+      </div>
     );
   };
 
   return (
     <div className="bg-gradient-to-r from-[#291FB1]  to-[#5046E6] ... flex flex-col justify-center items-center p-6 py-12">
-      <div className="hidden bg-[#4337e0] gap-8 md:flex justify-center items-center p-2 rounded-full  border border-white border-opacity-20 ">
+      <div className="hidden bg-[#4337e0] gap-3 md:gap-2 lg:gap-8 md:flex justify-center items-center p-2  rounded-full  border border-white border-opacity-20 ">
         <div
-          className={`flex gap-2 justify-center items-center rounded-3xl   p-2 px-12 cursor-pointer ${
+          className={`flex gap-2 justify-center items-center rounded-3xl p-2 px-12 cursor-pointer ${
             activeTab === "videocms"
               ? "active-tab text-violet-600 bg-white"
               : "text-white"
