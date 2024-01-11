@@ -23,7 +23,7 @@ const Footer = () => {
           <img src={star} alt="" />
           <img src={star} alt="" />
           <img src={star} alt="" />
-          <span>
+          <span className="text-center">
             {"  "}
             <b> &nbsp; 4.7</b> out of <b>5</b> stars{" "}
           </span>
