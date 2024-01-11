@@ -80,8 +80,8 @@ const Section5 = () => {
                 Your branding on your videos
               </h1>
               <span className=" text-zinc-300">
-                Securely store and manage your video assets. Control every
-                aspect of your videos.
+                Stand out from the crowd. Drape your video player with your
+                brand's colors and elements.
               </span>
 
               <div className="flex gap-4 items-center text-white text-sm">
@@ -89,7 +89,7 @@ const Section5 = () => {
                   <img src={tick2} alt="" />
                 </span>
                 <span>
-                  Start streaming instantly, don’t get stuck in upload queues
+                  Completely customize the video player in your brand’s theme{" "}
                 </span>
               </div>
               <div className="flex  gap-4 items-center text-white text-sm">
@@ -97,7 +97,7 @@ const Section5 = () => {
                   <img src={tick2} alt="" />
                 </span>
                 <span>
-                  Organize videos with collections, folders and video profiles{" "}
+                  Add your logo, CTAs and watermarks on selected or all videos{" "}
                 </span>
               </div>
               <div className="flex  gap-4 items-center text-white text-sm">
@@ -105,7 +105,7 @@ const Section5 = () => {
                   <img src={tick2} alt="" />
                 </span>
                 <span>
-                  Add multi subtitles and audio tracks for a global audience{" "}
+                  Upload custom thumbnails or pick a frame from your video{" "}
                 </span>
               </div>
               <div className="flex  gap-4 items-center text-white text-sm">
@@ -113,7 +113,7 @@ const Section5 = () => {
                   <img src={tick2} alt="" />
                 </span>
                 <span>
-                  Inbuilt video SEO and video channels to amplify your reach{" "}
+                  Choose the player controls that work best for your use case{" "}
                 </span>
               </div>
             </div>
@@ -130,8 +130,8 @@ const Section5 = () => {
                 Cinematic video experience
               </h1>
               <span className=" text-zinc-300">
-                Securely store and manage your video assets. Control every
-                aspect of your videos.
+                Buffer-free streaming with every view. Automatically resized
+                videos across desktops, TVs and mobile devices.
               </span>
 
               <div className="flex gap-4 items-center text-white text-sm">
@@ -226,7 +226,7 @@ const Section5 = () => {
   const renderTabContentPhone = () => {
     return (
       <div className="flex flex-col">
-       <div className="flex flex-col md:flex-row gap-10 p-6  justify-center items-center text-white">
+        <div className="flex flex-col md:flex-row gap-10 p-6  justify-center items-center text-white">
           <div className="flex flex-col gap-4 flex-1">
             <h1 className="text-4xl font-semibold">Simplified video CMS</h1>
             <span className=" text-zinc-300">
@@ -277,8 +277,8 @@ const Section5 = () => {
               Your branding on your videos
             </h1>
             <span className=" text-zinc-300">
-              Securely store and manage your video assets. Control every aspect
-              of your videos.
+              Stand out from the crowd. Drape your video player with your
+              brand's colors and elements.
             </span>
 
             <div className="flex gap-4 items-center text-white text-sm">
@@ -286,7 +286,7 @@ const Section5 = () => {
                 <img src={tick2} alt="" />
               </span>
               <span>
-                Start streaming instantly, don’t get stuck in upload queues
+                Completely customize the video player in your brand’s theme{" "}
               </span>
             </div>
             <div className="flex  gap-4 items-center text-white text-sm">
@@ -294,7 +294,7 @@ const Section5 = () => {
                 <img src={tick2} alt="" />
               </span>
               <span>
-                Organize videos with collections, folders and video profiles{" "}
+                Add your logo, CTAs and watermarks on selected or all videos{" "}
               </span>
             </div>
             <div className="flex  gap-4 items-center text-white text-sm">
@@ -302,7 +302,7 @@ const Section5 = () => {
                 <img src={tick2} alt="" />
               </span>
               <span>
-                Add multi subtitles and audio tracks for a global audience{" "}
+                Upload custom thumbnails or pick a frame from your video{" "}
               </span>
             </div>
             <div className="flex  gap-4 items-center text-white text-sm">
@@ -310,7 +310,7 @@ const Section5 = () => {
                 <img src={tick2} alt="" />
               </span>
               <span>
-                Inbuilt video SEO and video channels to amplify your reach{" "}
+                Choose the player controls that work best for your use case{" "}
               </span>
             </div>
           </div>
@@ -324,8 +324,8 @@ const Section5 = () => {
               Cinematic video experience
             </h1>
             <span className=" text-zinc-300">
-              Securely store and manage your video assets. Control every aspect
-              of your videos.
+              Buffer-free streaming with every view. Automatically resized
+              videos across desktops, TVs and mobile devices.
             </span>
 
             <div className="flex gap-4 items-center text-white text-sm">
