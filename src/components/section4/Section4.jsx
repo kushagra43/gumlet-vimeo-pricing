@@ -12,6 +12,8 @@ const Section4 = () => {
         <h1 className=" text-4xl font-semibold">Gumlet vs Vimeo</h1>
         <div className="border-[2px] rounded-3xl border-[#E2E2E2] mt-12">
           <table className="bg-zinc-50 rounded-3xl text-sm">
+            <tbody>
+
             <tr>
               <td className="p-3 md:p-5 md:px-10 px-3 text-xl md:text-2xl font-semibold">Features</td>
               <td className="p-3 md:p-5 md:px-10 px-3">
@@ -93,6 +95,7 @@ const Section4 = () => {
                 <img src={cross} alt="" className="h-1/5 w-1/5 " />
               </td>
             </tr>
+            </tbody>
           </table>
         </div>
         <div className="flex justify-center items-center mt-12 mb-12">

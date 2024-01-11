@@ -9,7 +9,9 @@ const Section6 = () => {
       </div>
       <div className="grid grids-col-1 md:grid-cols-2 lg:grid-cols-4 md:flex-row justify-center lg:px-48 px-2 items-center mt-12 gap-10  md:gap-6 lg:gap-0">
         <div className="flex flex-col justify-center items-center border-r px-8 ">
-          <span className="text-2xl font-semibold text-center">Connect With Apps</span>
+          <span className="text-2xl font-semibold text-center">
+            Connect With Apps
+          </span>
           <span className="mt-6 font-xs text-zinc-500 text-center">
             Send data to Google Analytics, add FB pixels and VAST tags for
             effective targeting and monetization.
@@ -34,7 +36,9 @@ const Section6 = () => {
           </span>
         </div>
         <div className="flex flex-col justify-center items-center  px-8 ">
-          <span className="text-2xl font-semibold text-center">Stunning Streaming Experience</span>
+          <span className="text-2xl font-semibold text-center">
+            Stunning Streaming Experience
+          </span>
           <span className="mt-6 font-xs text-zinc-500 text-center">
             Upload your videos without limits and restrictive quotas. Migrate
             all your videos from Vimeo in one click.

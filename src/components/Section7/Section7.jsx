@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import dashboard2 from "../../assets/dashboard2.svg";
 import left from "../../assets/left.svg";
 import right from "../../assets/right.svg";
 import "slick-carousel/slick/slick.css";
@@ -8,7 +7,6 @@ import Slider from "react-slick";
 import star from "../../assets/star.svg";
 
 const Section7 = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth); // Track window width
 
   const slides = [
@@ -56,7 +54,6 @@ const Section7 = () => {
   );
 
   const settings = {
-    // dots:true,
     infinite: true,
     speed: 500,
     slidesToScroll: 1,
@@ -68,7 +65,6 @@ const Section7 = () => {
     autoplay:true
   }
   useEffect(() => {
-    // Update windowWidth when window is resized
     const handleResize = () => setWindowWidth(window.innerWidth);
     window.addEventListener("resize", handleResize);
     return;
