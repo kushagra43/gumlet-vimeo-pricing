@@ -34,7 +34,7 @@ const Navbar = () => {
         WebkitBackdropFilter: "blur(6.6px)",
       }}
     >
-      <img src={logo} alt="gumlet Logo" className="" />
+      <img src={logo} alt="gumlet Logo" className=" w-2/5 md:w-max" />
       <button className="text-[#5046E6] flex justify-center items-center gap-2  font-semibold bg-white p-2 px-6 rounded-full hover:scale-110 duration-200 transform">
         Try for Free <FaArrowRight />{" "}
       </button>
