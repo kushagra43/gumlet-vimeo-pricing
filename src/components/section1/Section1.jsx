@@ -64,14 +64,7 @@ const Section1 = () => {
           </div>
         </div>
       </div>
-      <div
-        className="flex justify-center items-center mt-3 "
-        // style={{
-        //   backgroundImage:
-        //     "linear-gradient(to bottom, transparent 50%, white 50%)",
-        //   pointerEvents: "none",
-        // }}
-      >
+      <div className="flex justify-center items-center mt-3 ">
         <img src={gumletDashboard} alt="" />
       </div>
     </div>
