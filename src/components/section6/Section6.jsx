@@ -4,42 +4,40 @@ import { FaArrowRight } from "react-icons/fa6";
 const Section6 = () => {
   return (
     <div className="mt-20">
-      <div className="flex flex-col justify-center items-center text-4xl font-semibold">
+      <div className="flex flex-col justify-center items-center text-center text-4xl font-semibold">
         <p>One Platform for Everything Video</p>
       </div>
-      <div className="flex  justify-center items-center mt-12">
+      <div className="flex flex-col md:flex-row justify-center md:px-48 px-2 items-center mt-12 gap-8 md:gap-0">
         <div className="flex flex-col justify-center items-center border-r px-8 ">
-          <span className="text-2xl font-semibold">Connect With</span>
-          <span className="text-2xl font-semibold">Apps</span>
+          <span className="text-2xl font-semibold text-center">Connect With Apps</span>
           <span className="mt-6 font-xs text-zinc-500 text-center">
-            Send data to Google <br /> Analytics, add FB pixels <br /> and VAST
-            tags for <br /> effective targeting and <br /> monetization.
+            Send data to Google Analytics, add FB pixels and VAST tags for
+            effective targeting and monetization.
           </span>
         </div>
         <div className="flex flex-col justify-center items-center border-r px-8 ">
-          <span className="text-2xl font-semibold">Video Pipeline</span>
-          <span className="text-2xl font-semibold">On Autopilot</span>
+          <span className="text-2xl font-semibold text-center">
+            Video Pipeline On Autopilot
+          </span>
           <span className="mt-6 font-xs text-zinc-500 text-center">
-            Seamlessly integrate with <br /> your workflow. Automate <br /> with
-            Zapier, Pabbly, APIs, <br /> and webhooks and <br /> reduce time to
-            stream.
+            Seamlessly integrate with your workflow. Automate with Zapier,
+            Pabbly, APIs, and webhooks and reduce time to stream.
           </span>
         </div>
         <div className="flex flex-col justify-center items-center border-r px-8  ">
-          <span className="text-2xl font-semibold">No upload limits</span>
-          <span className="text-2xl font-semibold"> and quotas </span>
+          <span className="text-2xl font-semibold text-center">
+            No upload limits and quotas{" "}
+          </span>
           <span className="mt-6 font-xs text-zinc-500 text-center">
-            Track engagement <br /> and playback metrics. <br /> Make data
-            driven <br /> decisions to grow <br /> your audience.
+            Track engagement and playback metrics. Make data driven decisions to
+            grow your audience.
           </span>
         </div>
         <div className="flex flex-col justify-center items-center  px-8 ">
-          <span className="text-2xl font-semibold">Stunning</span>
-          <span className="text-2xl font-semibold">Streaming Experience</span>
+          <span className="text-2xl font-semibold text-center">Stunning Streaming Experience</span>
           <span className="mt-6 font-xs text-zinc-500 text-center">
-            Upload your videos <br /> without limits and <br /> restrictive
-            quotas. Migrate <br />
-            all your videos from <br /> Vimeo in one click.
+            Upload your videos without limits and restrictive quotas. Migrate
+            all your videos from Vimeo in one click.
           </span>
         </div>
       </div>

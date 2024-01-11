@@ -24,12 +24,12 @@ const Section5 = () => {
     switch (activeTab) {
       case "videocms":
         return (
-          <div className="flex gap-20 p-12 justify-center items-center text-white">
+          <div className="flex flex-col md:flex-row gap-20 md:p-12 p-6 justify-center items-center text-white">
             <div className="flex flex-col gap-4 flex-1">
               <h1 className="text-4xl font-semibold">Simplified video CMS</h1>
               <span className=" text-zinc-300">
-                Securely store and manage your video assets. <br /> Control
-                every aspect of your videos.
+                Securely store and manage your video assets. Control every
+                aspect of your videos.
               </span>
 
               <div className="flex gap-4 items-center text-white text-sm">
@@ -37,8 +37,7 @@ const Section5 = () => {
                   <img src={tick2} alt="" />
                 </span>
                 <span>
-                  Start streaming instantly, don’t get stuck in <br /> upload
-                  queues
+                  Start streaming instantly, don’t get stuck in upload queues
                 </span>
               </div>
               <div className="flex  gap-4 items-center text-white text-sm">
@@ -46,8 +45,7 @@ const Section5 = () => {
                   <img src={tick2} alt="" />
                 </span>
                 <span>
-                  Organize videos with collections, folders and <br /> video
-                  profiles{" "}
+                  Organize videos with collections, folders and video profiles{" "}
                 </span>
               </div>
               <div className="flex  gap-4 items-center text-white text-sm">
@@ -55,8 +53,7 @@ const Section5 = () => {
                   <img src={tick2} alt="" />
                 </span>
                 <span>
-                  Add multi subtitles and audio tracks for a <br /> global
-                  audience{" "}
+                  Add multi subtitles and audio tracks for a global audience{" "}
                 </span>
               </div>
               <div className="flex  gap-4 items-center text-white text-sm">
@@ -64,8 +61,7 @@ const Section5 = () => {
                   <img src={tick2} alt="" />
                 </span>
                 <span>
-                  Inbuilt video SEO and video channels to <br /> amplify your
-                  reach{" "}
+                  Inbuilt video SEO and video channels to amplify your reach{" "}
                 </span>
               </div>
             </div>
@@ -76,14 +72,14 @@ const Section5 = () => {
         );
       case "player":
         return (
-          <div className="flex gap-20 p-12 justify-center items-center text-white">
+          <div className="flex flex-col md:flex-row gap-20 p-12 justify-center items-center text-white">
             <div className="flex flex-col gap-4 flex-1">
               <h1 className="text-4xl font-semibold">
-                Your branding on <br /> your videos
+                Your branding on your videos
               </h1>
               <span className=" text-zinc-300">
-                Securely store and manage your video assets. <br /> Control
-                every aspect of your videos.
+                Securely store and manage your video assets. Control every
+                aspect of your videos.
               </span>
 
               <div className="flex gap-4 items-center text-white text-sm">
@@ -91,8 +87,7 @@ const Section5 = () => {
                   <img src={tick2} alt="" />
                 </span>
                 <span>
-                  Start streaming instantly, don’t get stuck in <br /> upload
-                  queues
+                  Start streaming instantly, don’t get stuck in upload queues
                 </span>
               </div>
               <div className="flex  gap-4 items-center text-white text-sm">
@@ -100,8 +95,7 @@ const Section5 = () => {
                   <img src={tick2} alt="" />
                 </span>
                 <span>
-                  Organize videos with collections, folders and <br /> video
-                  profiles{" "}
+                  Organize videos with collections, folders and video profiles{" "}
                 </span>
               </div>
               <div className="flex  gap-4 items-center text-white text-sm">
@@ -109,8 +103,7 @@ const Section5 = () => {
                   <img src={tick2} alt="" />
                 </span>
                 <span>
-                  Add multi subtitles and audio tracks for a <br /> global
-                  audience{" "}
+                  Add multi subtitles and audio tracks for a global audience{" "}
                 </span>
               </div>
               <div className="flex  gap-4 items-center text-white text-sm">
@@ -118,8 +111,7 @@ const Section5 = () => {
                   <img src={tick2} alt="" />
                 </span>
                 <span>
-                  Inbuilt video SEO and video channels to <br /> amplify your
-                  reach{" "}
+                  Inbuilt video SEO and video channels to amplify your reach{" "}
                 </span>
               </div>
             </div>
@@ -130,14 +122,14 @@ const Section5 = () => {
         );
       case "cinematic":
         return (
-          <div className="flex gap-20 p-12 justify-center items-center text-white">
+          <div className="flex flex-col md:flex-row gap-20 p-12 justify-center items-center text-white">
             <div className="flex flex-col gap-4 flex-1">
               <h1 className="text-4xl font-semibold">
-                Cinematic video <br /> experience
+                Cinematic video experience
               </h1>
               <span className=" text-zinc-300">
-                Securely store and manage your video assets. <br /> Control
-                every aspect of your videos.
+                Securely store and manage your video assets. Control every
+                aspect of your videos.
               </span>
 
               <div className="flex gap-4 items-center text-white text-sm">
@@ -145,8 +137,8 @@ const Section5 = () => {
                   <img src={tick2} alt="" />
                 </span>
                 <span>
-                  AI-powered video compression for <br /> optimized bitrates and
-                  video quality
+                  AI-powered video compression for optimized bitrates and video
+                  quality
                 </span>
               </div>
               <div className="flex  gap-4 items-center text-white text-sm">
@@ -154,8 +146,8 @@ const Section5 = () => {
                   <img src={tick2} alt="" />
                 </span>
                 <span>
-                  Adaptive streaming + HLS for uninterrupted <br /> streaming on
-                  choppy networks
+                  Adaptive streaming + HLS for uninterrupted streaming on choppy
+                  networks
                 </span>
               </div>
               <div className="flex  gap-4 items-center text-white text-sm">
@@ -163,8 +155,8 @@ const Section5 = () => {
                   <img src={tick2} alt="" />
                 </span>
                 <span>
-                  Multi CDN infra with 99.95% uptime and low- <br /> latency
-                  global streaming
+                  Multi CDN infra with 99.95% uptime and low- latency global
+                  streaming
                 </span>
               </div>
               <div className="flex  gap-4 items-center text-white text-sm">
@@ -172,8 +164,8 @@ const Section5 = () => {
                   <img src={tick2} alt="" />
                 </span>
                 <span>
-                  Pick resolutions from 240p to 4K and latest <br /> codecs:
-                  H264 and H265
+                  Pick resolutions from 240p to 4K and latest codecs: H264 and
+                  H265
                 </span>
               </div>
             </div>
@@ -184,35 +176,31 @@ const Section5 = () => {
         );
       case "videoprotection":
         return (
-          <div className="flex gap-20 p-12 justify-center items-center text-white">
+          <div className="flex flex-col md:flex-row gap-20 p-12 justify-center items-center text-white">
             <div className="flex flex-col gap-4 flex-1">
               <h1 className="text-4xl font-semibold">Protect your videos</h1>
               <span className=" text-zinc-300">
-                Netflix-grade video security to maximize ROI and <br /> minimize
-                piracy and theft.{" "}
+                Netflix-grade video security to maximize ROI and minimize piracy
+                and theft.{" "}
               </span>
               <div className="flex  gap-4 items-center text-white text-sm">
                 <span>
                   <img src={tick2} alt="" />
                 </span>
-                <span>
-                  Widevine & Fairplay DRMs prevent content <br /> theft
-                </span>
+                <span>Widevine & Fairplay DRMs prevent content theft</span>
               </div>
               <div className="flex gap-4 items-center text-white text-sm">
                 <span>
                   <img src={tick2} alt="" />
                 </span>
-                <span>
-                  Secure playbacks with Signed URLs and <br /> Geo-blocks
-                </span>
+                <span>Secure playbacks with Signed URLs and Geo-blocks</span>
               </div>
               <div className="flex  gap-4 items-center text-white text-sm">
                 <span>
                   <img src={tick2} alt="" />
                 </span>
                 <span>
-                  Dynamic watermarks to curb theft via screen <br /> recording
+                  Dynamic watermarks to curb theft via screen recording
                 </span>
               </div>
               <div className="flex  gap-4 items-center text-white text-sm">
@@ -231,10 +219,195 @@ const Section5 = () => {
         return null;
     }
   };
+  const renderTabContentPhone = () => {
+    return (
+      <>
+        <div className="flex flex-col md:flex-row gap-20 md:p-12 p-6 justify-center items-center text-white">
+          <div className="flex flex-col gap-4 flex-1">
+            <h1 className="text-4xl font-semibold">Simplified video CMS</h1>
+            <span className=" text-zinc-300">
+              Securely store and manage your video assets. Control every aspect
+              of your videos.
+            </span>
+
+            <div className="flex gap-4 items-center text-white text-sm">
+              <span>
+                <img src={tick2} alt="" />
+              </span>
+              <span>
+                Start streaming instantly, don’t get stuck in upload queues
+              </span>
+            </div>
+            <div className="flex  gap-4 items-center text-white text-sm">
+              <span>
+                <img src={tick2} alt="" />
+              </span>
+              <span>
+                Organize videos with collections, folders and video profiles{" "}
+              </span>
+            </div>
+            <div className="flex  gap-4 items-center text-white text-sm">
+              <span>
+                <img src={tick2} alt="" />
+              </span>
+              <span>
+                Add multi subtitles and audio tracks for a global audience{" "}
+              </span>
+            </div>
+            <div className="flex  gap-4 items-center text-white text-sm">
+              <span>
+                <img src={tick2} alt="" />
+              </span>
+              <span>
+                Inbuilt video SEO and video channels to amplify your reach{" "}
+              </span>
+            </div>
+          </div>
+          <div className="flex-1">
+            <img src={dashboard2} alt="" />
+          </div>
+        </div>
+        <div className="flex flex-col md:flex-row gap-20 p-12 justify-center items-center text-white">
+          <div className="flex flex-col gap-4 flex-1">
+            <h1 className="text-4xl font-semibold">
+              Your branding on your videos
+            </h1>
+            <span className=" text-zinc-300">
+              Securely store and manage your video assets. Control every aspect
+              of your videos.
+            </span>
+
+            <div className="flex gap-4 items-center text-white text-sm">
+              <span>
+                <img src={tick2} alt="" />
+              </span>
+              <span>
+                Start streaming instantly, don’t get stuck in upload queues
+              </span>
+            </div>
+            <div className="flex  gap-4 items-center text-white text-sm">
+              <span>
+                <img src={tick2} alt="" />
+              </span>
+              <span>
+                Organize videos with collections, folders and video profiles{" "}
+              </span>
+            </div>
+            <div className="flex  gap-4 items-center text-white text-sm">
+              <span>
+                <img src={tick2} alt="" />
+              </span>
+              <span>
+                Add multi subtitles and audio tracks for a global audience{" "}
+              </span>
+            </div>
+            <div className="flex  gap-4 items-center text-white text-sm">
+              <span>
+                <img src={tick2} alt="" />
+              </span>
+              <span>
+                Inbuilt video SEO and video channels to amplify your reach{" "}
+              </span>
+            </div>
+          </div>
+          <div className="flex-1">
+            <img src={dashboard3} alt="" />
+          </div>
+        </div>
+        <div className="flex flex-col md:flex-row gap-20 p-12 justify-center items-center text-white">
+          <div className="flex flex-col gap-4 flex-1">
+            <h1 className="text-4xl font-semibold">
+              Cinematic video experience
+            </h1>
+            <span className=" text-zinc-300">
+              Securely store and manage your video assets. Control every aspect
+              of your videos.
+            </span>
+
+            <div className="flex gap-4 items-center text-white text-sm">
+              <span>
+                <img src={tick2} alt="" />
+              </span>
+              <span>
+                AI-powered video compression for optimized bitrates and video
+                quality
+              </span>
+            </div>
+            <div className="flex  gap-4 items-center text-white text-sm">
+              <span>
+                <img src={tick2} alt="" />
+              </span>
+              <span>
+                Adaptive streaming + HLS for uninterrupted streaming on choppy
+                networks
+              </span>
+            </div>
+            <div className="flex  gap-4 items-center text-white text-sm">
+              <span>
+                <img src={tick2} alt="" />
+              </span>
+              <span>
+                Multi CDN infra with 99.95% uptime and low- latency global
+                streaming
+              </span>
+            </div>
+            <div className="flex  gap-4 items-center text-white text-sm">
+              <span>
+                <img src={tick2} alt="" />
+              </span>
+              <span>
+                Pick resolutions from 240p to 4K and latest codecs: H264 and
+                H265
+              </span>
+            </div>
+          </div>
+          <div className="flex-1">
+            <img src={dashboard4} alt="" />
+          </div>
+        </div>
+        <div className="flex flex-col md:flex-row gap-20 p-12 justify-center items-center text-white">
+          <div className="flex flex-col gap-4 flex-1">
+            <h1 className="text-4xl font-semibold">Protect your videos</h1>
+            <span className=" text-zinc-300">
+              Netflix-grade video security to maximize ROI and minimize piracy
+              and theft.{" "}
+            </span>
+            <div className="flex  gap-4 items-center text-white text-sm">
+              <span>
+                <img src={tick2} alt="" />
+              </span>
+              <span>Widevine & Fairplay DRMs prevent content theft</span>
+            </div>
+            <div className="flex gap-4 items-center text-white text-sm">
+              <span>
+                <img src={tick2} alt="" />
+              </span>
+              <span>Secure playbacks with Signed URLs and Geo-blocks</span>
+            </div>
+            <div className="flex  gap-4 items-center text-white text-sm">
+              <span>
+                <img src={tick2} alt="" />
+              </span>
+              <span>Dynamic watermarks to curb theft via screen recording</span>
+            </div>
+            <div className="flex  gap-4 items-center text-white text-sm">
+              <span>
+                <img src={tick2} alt="" />
+              </span>
+              <span>Encrypted storage for secure video hosting</span>
+            </div>
+          </div>
+          <div className="flex-1">
+            <img src={dashboard4} alt="" />
+          </div>
+        </div>
+      </>
+    );
+  };
 
   return (
     <div className="bg-gradient-to-r from-[#291FB1]  to-[#5046E6] ... flex flex-col justify-center items-center p-6 py-12">
-      <div className=" bg-[#4337e0] gap-8 flex justify-center items-center p-2 rounded-full  border border-white border-opacity-20">
+      <div className="hidden bg-[#4337e0] gap-8 md:flex justify-center items-center p-2 rounded-full  border border-white border-opacity-20 ">
         <div
           className={`flex gap-2 justify-center items-center rounded-3xl   p-2 px-12 cursor-pointer ${
             activeTab === "videocms"
@@ -246,6 +419,7 @@ const Section5 = () => {
           <img src={activeTab === "videocms" ? videocms : videocms2} alt="" />
           <span>Video CMS</span>
         </div>
+
         <div
           className={`flex gap-2 justify-center items-center rounded-3xl   p-2 px-12 cursor-pointer ${
             activeTab === "player"
@@ -257,6 +431,7 @@ const Section5 = () => {
           <img src={activeTab === "player" ? player2 : player} alt="" />
           <span>Player Customization </span>
         </div>
+
         <div
           className={`flex gap-2 justify-center items-center rounded-3xl  p-2 px-12 cursor-pointer ${
             activeTab === "cinematic"
@@ -271,6 +446,7 @@ const Section5 = () => {
           />
           <span>Cinematic video</span>
         </div>
+
         <div
           className={`flex gap-2 justify-center items-center rounded-3xl   p-2 px-12 cursor-pointer ${
             activeTab === "videoprotection"
@@ -291,7 +467,8 @@ const Section5 = () => {
         </div>
       </div>
 
-      {renderTabContent()}
+      <div className="hidden md:flex">{renderTabContent()}</div>
+      <div className="flex flex-col md:hidden">{renderTabContentPhone()}</div>
 
       <div>
         <button className="text-[#5046E6] flex justify-center items-center gap-2 font-bold bg-white  px-8 p-4 rounded-full hover:scale-110 duration-200 transform">

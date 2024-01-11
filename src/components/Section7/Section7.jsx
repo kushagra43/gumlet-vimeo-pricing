@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import dashboard2 from "../../assets/dashboard2.svg";
 import left from "../../assets/left.svg";
 import right from "../../assets/right.svg";
@@ -9,6 +9,7 @@ import star from "../../assets/star.svg";
 
 const Section7 = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth); // Track window width
 
   const slides = [
     {
@@ -54,23 +55,32 @@ const Section7 = () => {
     </button>
   );
 
-  var settings = {
+  const settings = {
     // dots:true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
     slidesToScroll: 1,
     prevArrow: <CustomPrevArrow />,
     nextArrow: <CustomNextArrow />,
-  };
+    slidesToShow:
+    windowWidth <= 768 ? 1 : // 1 slide for phone
+    windowWidth <= 1024 ? 2 : 3, // 2 slides for tablet  };
+  }
+  useEffect(() => {
+    // Update windowWidth when window is resized
+    const handleResize = () => setWindowWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+    return;
+    () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
     <div className="mb-12 mt-12">
-      <div className="flex justify-center items-center font-bold text-4xl">
+      <div className="flex justify-center items-center text-center font-bold text-4xl">
         <h1>See What People are Saying About Us</h1>
       </div>
       {/* Slider container */}
-      <div className="w-3/4 m-auto">
+      <div className="w-[85%] m-auto">
         <div className="mt-20">
           <Slider {...settings}>
             {slides.map((d, index) => (
@@ -79,7 +89,7 @@ const Section7 = () => {
                 className=" text-black bg-white rounded-xl mx-4 "
               >
                 <div className="mx-4">
-                  <div className="flex flex-wrap  justify-center rounded-lg text-white  items-center p-6 py-16 px-8 bg-gradient-to-r from-[#291FB1]  to-[#5046E6] ...">
+                  <div className="flex  justify-center rounded-lg text-white  items-center p-6 py-16 px-8 bg-gradient-to-r from-[#291FB1]  to-[#5046E6] ...">
                     <span>{d.description}</span>
                   </div>
                   <div className="flex flex-col items-center justify-center gap-1 p-4">
