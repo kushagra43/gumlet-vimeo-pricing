@@ -86,7 +86,7 @@ const Section7 = () => {
                 className=" text-black bg-white rounded-xl mx-4 "
               >
                 <div className="mx-4">
-                  <div className="flex  justify-center rounded-lg text-white  items-center p-6 py-16 px-8 bg-gradient-to-r from-[#291FB1]  to-[#5046E6] ...">
+                  <div className="flex  justify-center rounded-lg text-white  items-center text-lg  py-20 px-12 bg-gradient-to-r from-[#291FB1]  to-[#5046E6] ...">
                     <span>{d.description}</span>
                   </div>
                   <div className="flex flex-col items-center justify-center gap-1 p-4">

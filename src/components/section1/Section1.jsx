@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Navbar from "../navbar/Navbar";
 import gumletDashboard from "../../assets/gumlet-dashboard.svg";
 import axios from "axios";
 
-const Section1 = () => {
+const Section1 = ({ targetSectionRef }) => {
   const [email, setEmail] = useState("");
   const [loading, setLoading] = useState(false);
 
@@ -34,6 +34,21 @@ const Section1 = () => {
     }
   };
 
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src =
+      "https://gumlet-team.myfreshworks.com/crm/sales/web_forms/7afc54c6287eef697898c6beef6f39d2555b4dc0831191312f62aa3941e42a3b/form.js";
+    script.crossOrigin = "anonymous";
+    script.id =
+      "fs_7afc54c6287eef697898c6beef6f39d2555b4dc0831191312f62aa3941e42a3b";
+
+    document.head.appendChild(script);
+
+    return () => {
+      document.head.removeChild(script);
+    };
+  }, []);
+
   return (
     <div className="bg-gradient-to-r from-[#291FB1]  to-[rgb(80,70,230)]  ... md:rounded-b-[90%]">
       <div className="md:px-2 lg:px-48 flex flex-col justify-center gap-8 p-6">
@@ -53,6 +68,7 @@ const Section1 = () => {
               onChange={(e) => setEmail(e.target.value)}
               className="p-2 md:text-sm text-xs outline-none rounded-l-full"
               placeholder="john@gmail.com"
+              ref={targetSectionRef}
             />
             <button
               onClick={handleSubmit}

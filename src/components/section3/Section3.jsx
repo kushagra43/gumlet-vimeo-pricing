@@ -1,7 +1,7 @@
 import React from "react";
 import { FaArrowRight } from "react-icons/fa6";
 
-const Section3 = () => {
+const Section3 = ({ targetSectionRef, handleButtonClick }) => {
   return (
     <div className="mb-20">
       <div className="flex flex-col md:justify-center lg:px-80 md:px-10 px-8 text-center md:items-center md:text-4xl text-2xl font-semibold">
@@ -38,7 +38,7 @@ const Section3 = () => {
         </div>
       </div>
       <div className="flex justify-center items-center mt-12 mb-12">
-        <button className="text-white flex justify-center items-center gap-2 font-semibold bg-[#5046E6] p-4 px-8 rounded-full hover:scale-110 duration-200 transform">
+        <button onClick={handleButtonClick} className="text-white flex justify-center items-center gap-2 font-semibold bg-[#5046E6] p-4 px-8 rounded-full hover:scale-110 duration-200 transform">
           Try for Free <FaArrowRight />{" "}
         </button>
       </div>

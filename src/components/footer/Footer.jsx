@@ -5,14 +5,14 @@ import bestResults from "../../assets/bestResults.svg";
 import bestRoi from "../../assets/bestRoi.svg";
 import leader from "../../assets/leader.svg";
 
-const Footer = () => {
+const Footer = ({handleButtonClick}) => {
   return (
     <div className="bg-gradient-to-r from-[#291FB1]  to-[#5046E6] flex md:gap-20  justify-center items-center md:p-12 p-6 text-white ">
       <div className="flex flex-col justify-center items-start gap-8 flex-1">
         <h1 className="font-bold md:text-4xl lg:text-5xl text-xl ">
           Transform Your Viewers’ Video Experience in Minutes.
         </h1>
-        <button className="text-[#5046E6] flex  justify-center text-sm md:text-base items-center gap-2 font-bold bg-white md:p-4 md:px-8 px-3 p-2 rounded-full">
+        <button onClick={handleButtonClick} className="text-[#5046E6] flex  justify-center text-sm md:text-base items-center gap-2 font-bold bg-white md:p-4 md:px-8 px-3 p-2 rounded-full">
           <React.Fragment>
             {" "}
             Try for Free <FaArrowRight />{" "}

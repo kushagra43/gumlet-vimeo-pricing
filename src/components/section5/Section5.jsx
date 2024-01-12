@@ -13,7 +13,7 @@ import dashboard3 from "../../assets/dashboard3.svg";
 import dashboard4 from "../../assets/dashboard4.svg";
 import { FaArrowRight } from "react-icons/fa6";
 
-const Section5 = () => {
+const Section5 = ({handleButtonClick}) => {
   const [activeTab, setActiveTab] = useState("videocms"); // Set the default active tab
 
   const handleTabClick = (tab) => {
@@ -475,7 +475,7 @@ const Section5 = () => {
       <div className="flex flex-col md:hidden">{renderTabContentPhone()}</div>
 
       <div>
-        <button className="text-[#5046E6] flex justify-center items-center gap-2 font-bold bg-white  px-8 p-4 rounded-full hover:scale-110 duration-200 transform">
+        <button onClick={handleButtonClick} className="text-[#5046E6] flex justify-center items-center gap-2 font-bold bg-white  px-8 p-4 rounded-full hover:scale-110 duration-200 transform">
           Try for Free <FaArrowRight />{" "}
         </button>
       </div>
