@@ -43,7 +43,7 @@ const Section1 = ({ targetSectionRef }) => {
   }, []);
 
   return (
-    <div className="bg-gradient-to-r from-[#291FB1]  to-[rgb(80,70,230)]  ... md:rounded-b-[90%]">
+    <div className="bg-gradient-to-r from-[#291FB1]  to-[rgb(80,70,230)]  ... md:rounded-b-[90%] " ref={targetSectionRef}>
       <div className="md:px-2 lg:px-48 flex flex-col justify-center gap-8 p-6">
         <h1 className=" md:px-12 lg:pr-80 text-3xl md:text-5xl font-semibold text-left  text-white mt-20">
           Best Vimeo Alternative For Video Hosting

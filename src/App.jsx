@@ -13,14 +13,24 @@ import { useRef } from "react";
 function App() {
   const targetSectionRef = useRef(null);
 
+  // const handleButtonClick = () => {
+  //   window.scrollTo({ top: 0, behavior: "smooth" });
+  // };
   const handleButtonClick = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    if (targetSectionRef.current) {
+      targetSectionRef.current.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start', // Align to the start of the target element
+        inline: 'nearest', // Align to the nearest edge of the target element
+        // offsetTop: -100, 
+      });
+    }
   };
 
   return (
     <>
-      <Navbar />
-      <Section1 targetSectionRef={targetSectionRef} />
+      <Navbar handleButtonClick={handleButtonClick}/>
+      <Section1 targetSectionRef={targetSectionRef} ref={targetSectionRef} />
       <Section2 />
       <Section3
         targetSectionRef={targetSectionRef}
