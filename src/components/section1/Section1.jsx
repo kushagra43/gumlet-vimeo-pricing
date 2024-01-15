@@ -51,7 +51,7 @@ const Section1 = ({ targetSectionRef }) => {
     script.id =
       "fs_7afc54c6287eef697898c6beef6f39d2555b4dc0831191312f62aa3941e42a3b";
 
-    document.head.appendChild(script);
+    document.body.appendChild(script);
 
     return () => {
       // Cleanup: remove the script when the component is unmounted
