@@ -5,6 +5,10 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import star from "../../assets/star.svg";
+import { FaArrowAltCircleLeft } from "react-icons/fa";
+import { FaArrowAltCircleRight } from "react-icons/fa";
+
+
 
 const Section7 = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth); // Track window width
@@ -42,16 +46,39 @@ const Section7 = () => {
   ];
 
   const CustomPrevArrow = (props) => (
-    <button {...props} className="slick-prev">
-      <img src={left} alt="Previous" />
-    </button>
+    <button {...props} className="slick-prev h-8 w-8">
+    <img src={left} alt="" className=" absolute right-3 bottom-10" />
+  </button>
   );
 
   const CustomNextArrow = (props) => (
-    <button {...props} className="slick-next">
-      <img src={right} alt="Next" />
+    <button {...props} className="slick-next h-8 w-8 ">
+      <img src={right} alt="" className="absolute  left-2 bottom-10" />
     </button>
   );
+
+  function SampleNextArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{ ...style, display: "block", background: "black" }}
+        onClick={onClick}
+      />
+    );
+  }
+
+  function SamplePrevArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{ ...style, display: "block", background: "black" }}
+        onClick={onClick}
+      />
+    );
+  }
+  
 
   const settings = {
     infinite: true,
@@ -59,11 +86,9 @@ const Section7 = () => {
     slidesToScroll: 1,
     prevArrow: <CustomPrevArrow />,
     nextArrow: <CustomNextArrow />,
-    slidesToShow:
-    windowWidth <= 768 ? 1 : 
-    windowWidth <= 1024 ? 2 : 3,
-    autoplay:true
-  }
+    slidesToShow: windowWidth <= 768 ? 1 : windowWidth <= 1024 ? 2 : 3,
+    autoplay: true,
+  };
   useEffect(() => {
     const handleResize = () => setWindowWidth(window.innerWidth);
     window.addEventListener("resize", handleResize);
@@ -79,11 +104,16 @@ const Section7 = () => {
       {/* Slider container */}
       <div className="w-[85%] m-auto">
         <div className="mt-20">
-          <Slider {...settings}>
+          <Slider
+            {...settings}
+            prevArrow={<CustomPrevArrow />}
+            nextArrow={<CustomNextArrow />}
+          >
+            {" "}
             {slides.map((d, index) => (
               <div
                 key={index}
-                className=" text-black bg-white rounded-xl mx-4 "
+                className=" text-black bg-white rounded-xl "
               >
                 <div className="mx-4">
                   <div className="flex  justify-center rounded-lg text-white  items-center text-lg  py-20 px-12 bg-gradient-to-r from-[#291FB1]  to-[#5046E6] ...">

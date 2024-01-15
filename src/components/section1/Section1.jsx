@@ -35,18 +35,11 @@ const Section1 = ({ targetSectionRef }) => {
   };
 
   useEffect(() => {
-    const script = document.createElement("script");
-    script.src =
-      "https://gumlet-team.myfreshworks.com/crm/sales/web_forms/7afc54c6287eef697898c6beef6f39d2555b4dc0831191312f62aa3941e42a3b/form.js";
-    script.crossOrigin = "anonymous";
-    script.id =
-      "fs_7afc54c6287eef697898c6beef6f39d2555b4dc0831191312f62aa3941e42a3b";
-
-    document.head.appendChild(script);
-
-    return () => {
-      document.head.removeChild(script);
-    };
+    if (window.GumletForm) {
+      console.log("Gumlet form script loaded successfully!");
+    } else {
+      console.log("Error loading Gumlet form script.");
+    }
   }, []);
 
   return (
@@ -60,23 +53,12 @@ const Section1 = ({ targetSectionRef }) => {
             A comprehensive video hosting, security, and streaming solution that
             ensures buffer-free video delivery with each view.
           </span>
-          <div className="md:p-2 flex md:flex-wrap  bg-white rounded-full">
-            <input
-              id="emailInput"
-              type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              className="p-2 md:text-sm text-xs outline-none rounded-l-full"
-              placeholder="john@gmail.com"
-              ref={targetSectionRef}
-            />
-            <button
-              onClick={handleSubmit}
-              disabled={loading}
-              className="bg-[#5046E6] md:p-2 rounded-full md:px-7 px-2 md:text-sm text-xs text-white hover:scale-110 duration-200 transform"
-            >
-              Try for Free
-            </button>
+          <div className=" flex md:flex-wrap  bg-white rounded-full">
+            <script
+              src="https://gumlet-team.myfreshworks.com/crm/sales/web_forms/7afc54c6287eef697898c6beef6f39d2555b4dc0831191312f62aa3941e42a3b/form.js"
+              crossorigin="anonymous"
+              id="fs_7afc54c6287eef697898c6beef6f39d2555b4dc0831191312f62aa3941e42a3b"
+            ></script>
           </div>
         </div>
       </div>
