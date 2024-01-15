@@ -2,62 +2,10 @@ import React, { useEffect, useRef, useState } from "react";
 import Navbar from "../navbar/Navbar";
 import gumletDashboard from "../../assets/gumlet-dashboard.svg";
 import axios from "axios";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 const Section1 = ({ targetSectionRef }) => {
-  const [email, setEmail] = useState("");
-  const [loading, setLoading] = useState(false);
-
-  // const handleSubmit = async () => {
-  //   if (!email) {
-  //     console.error("Please enter your email address");
-  //     return;
-  //   }
-  //   const url = "https://gumlet-team.myfreshworks.com/crm/sales/api/contacts";
-  //   const jsonPayload = {
-  //     contact: {
-  //       email: email,
-  //     },
-  //   };
-  //   const headers = {
-  //     Authorization: "Token token=eQFEevSnl2SGx4uFBp1X8g",
-  //     "Content-Type": "application/json",
-  //   };
-  //   setLoading(true);
-
-  //   try {
-  //     const response = await axios.post(url, jsonPayload, { headers });
-  //     console.log("Success:", response.data);
-  //   } catch (error) {
-  //     console.error("Error:", error.message);
-  //   } finally {
-  //     setLoading(false);
-  //   }
-  // };
-
-  // useEffect(() => {
-  //   if (window.GumletForm) {
-  //     console.log("Gumlet form script loaded successfully!");
-  //   } else {
-  //     console.log("Error loading Gumlet form script.");
-  //   }
-  // }, []);
-
-  useEffect(() => {
-    const script = document.createElement("script");
-    script.src =
-      "https://gumlet-team.myfreshworks.com/crm/sales/web_forms/7afc54c6287eef697898c6beef6f39d2555b4dc0831191312f62aa3941e42a3b/form.js";
-    script.crossOrigin = "anonymous";
-    script.id =
-      "fs_7afc54c6287eef697898c6beef6f39d2555b4dc0831191312f62aa3941e42a3b";
-
-    document.head.appendChild(script);
-
-    return () => {
-      // Cleanup: remove the script when the component is unmounted
-      document.head.removeChild(script);
-    };
-  }, []);
+  console.log(document.head);
 
   return (
     <>
@@ -74,7 +22,10 @@ const Section1 = ({ targetSectionRef }) => {
               A comprehensive video hosting, security, and streaming solution
               that ensures buffer-free video delivery with each view.
             </span>
-            <div className=" flex md:flex-wrap  bg-white rounded-full">
+            <div
+              className=" flex md:flex-wrap  bg-white rounded-full"
+              id="gumlet-form-container"
+            >
               <Helmet>
                 <script
                   src="https://gumlet-team.myfreshworks.com/crm/sales/web_forms/7afc54c6287eef697898c6beef6f39d2555b4dc0831191312f62aa3941e42a3b/form.js"
