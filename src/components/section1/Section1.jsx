@@ -55,7 +55,7 @@ const Section1 = ({ targetSectionRef }) => {
 
     return () => {
       // Cleanup: remove the script when the component is unmounted
-      document.head.removeChild(script);
+     // document.head.removeChild(script);
     };
   }, []);
 
