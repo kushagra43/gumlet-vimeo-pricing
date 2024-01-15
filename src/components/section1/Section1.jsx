@@ -75,13 +75,11 @@ const Section1 = ({ targetSectionRef }) => {
               that ensures buffer-free video delivery with each view.
             </span>
             <div className=" flex md:flex-wrap  bg-white rounded-full">
-              <Helmet>
                 <script
                   src="https://gumlet-team.myfreshworks.com/crm/sales/web_forms/7afc54c6287eef697898c6beef6f39d2555b4dc0831191312f62aa3941e42a3b/form.js"
                   crossorigin="anonymous"
                   id="fs_7afc54c6287eef697898c6beef6f39d2555b4dc0831191312f62aa3941e42a3b"
                 ></script>
-              </Helmet>
             </div>
           </div>
         </div>
