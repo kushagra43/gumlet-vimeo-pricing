@@ -7,7 +7,7 @@ import Section6 from '../components/section6/Section6';
 import Section7 from '../components/Section7/Section7';
 import Section2 from '../components/section2/Section2';
 import Section4 from '../components/section4/Section4';
-import Footer from '../components/Footer/Footer';
+import Footer from '../components/footer/Footer';
 
 const First = () => {
 
