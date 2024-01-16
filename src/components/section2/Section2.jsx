@@ -6,7 +6,6 @@ import apna from "../../assets/apna.svg";
 import sportsKeeda from "../../assets/sportsKeeda.svg";
 import simplilearn from "../../assets/simplilearn.svg";
 import Marquee from "react-fast-marquee";
-import { Helmet } from "react-helmet";
 
 
 const Section2 = () => {
