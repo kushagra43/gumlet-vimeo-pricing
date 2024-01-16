@@ -1,6 +1,6 @@
 import React, { useRef } from 'react'
 import Navbar from '../components/navbar/Navbar'
-import Section2 from '../components/section2/section2'
+import Section2 from '../components/section2/Section2'
 import Section3 from '../components/section3/Section3'
 import Section4 from '../components/section4/Section4'
 import Section5 from '../components/section5/Section5'
